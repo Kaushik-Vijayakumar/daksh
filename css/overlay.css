@@ -1,0 +1,104 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	background: rgba(33,33,33 ,0.9);
+}
+
+.overlay input {
+	
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+.overlay h2 {
+    font-family: 'Lato', Arial, sans-serif;
+    text-transform: uppercase;
+	margin: 5% auto;
+	width: 50%;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+}
+
+.overlay p, .overlay ul {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+	margin: auto;
+	width: 60%;
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.overlay .big_text {
+	font-weight: bold;
+	margin: auto;
+	width: 60%;
+    font-family: 'Lato', Arial, sans-serif;
+	color: #fff;
+	font-size: 30px;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.overlay img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 25px; 
+	margin-bottom: 25px; 
+	height: 400px;
+}
+
+.overlay {
+	text-align: left;
+}
+
+.event {
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+.overlay .event p, .overlay .event ul{
+	text-align: left;
+}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	z-index: 3000;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}

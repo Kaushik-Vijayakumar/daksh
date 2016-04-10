@@ -1,0 +1,224 @@
+body {
+	overflow-style:auto;
+	background: url(../images/sky.png) scroll;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#Stage {
+	position:absolute;
+	height:800px;
+	top:160px;
+	width:45%;
+	z-index:20;
+}
+#logo{
+	position: absolute;
+    margin: 0px;
+    right: 0px;
+    top: 10%;
+    width: 550px;
+    height: 732px;
+    left: auto;
+    bottom: auto;
+    opacity: 1;
+    background-image: url("images/Daksh Logo.png");
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+#fwave {
+	z-index:3;
+	position:absolute;
+	top:450px;
+	background:url(../images/bg_frontwave.png) repeat-x;
+	height:27px;
+	width:100%;
+}
+
+#bwave {
+	z-index:2;
+	position:absolute;
+	top:440px;
+	background:url(../images/bg_backwave.png) repeat-x;
+	height:60px;
+	width:100%;
+}
+
+#water {
+	z-index:4;
+	position:absolute;
+	background:url(../images/tile_lightblue.png) repeat;
+	top:470px;
+	height:1300px;
+	width:100%;
+
+}
+
+#fade_middle {
+	z-index:4;
+	position:absolute;
+	background: url(../images/depth2_fadetop.png) repeat;
+	top:1545px;
+	height:225px;
+	width:100%;
+}
+
+#water_middle {
+	z-index:4;
+	position:absolute;
+	background:url(../images/tile_middle.jpeg) repeat;
+	top:1770px;
+	height:1000px;
+	width:100%;
+}
+
+#fade_dark {
+	z-index:4;
+	position:absolute;
+	background: url(../images/depth4_fadetop.png) repeat;
+	top:2390px;
+	height:380px;
+	width:100%;
+}
+
+#water_dark {
+	z-index:4;
+	position:absolute;
+	background:url(../images/tile_dark.jpeg) repeat;
+	top:2770px;
+	height:1300px;
+	width:100%;
+}
+
+
+#miner {
+	z-index:7;
+	position:fixed;
+	top:55%;
+	left:46.3%;
+	background:url(../images/vessel.png) no-repeat;
+	height:138px;
+	width:68px;
+}
+
+#arrow {
+	z-index:100;
+	position:fixed;
+	top:55%;
+	right: 1%;
+	background:url(../images/arrow.png) no-repeat;
+	height:138px;
+	width:68px;
+	cursor: pointer;	
+}
+
+.miner_bed {
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#tube_top {
+	z-index:10;
+	background:url(../images/tube_fronttop.png) no-repeat top left;
+	position:absolute;
+	top:440px;
+	height:47px;
+	left:46%;
+	width:86px;
+}
+
+#tube_front_water {
+	z-index:12;
+	background:url(../images/tube_overlay.png) no-repeat center;
+	position:absolute;
+	top:450px;
+	height:47px;
+	width:100%;
+}
+
+#tube_top_back {
+	background:url(../images/tube_backtop.png) no-repeat top left;
+	z-index:6;
+	position:absolute;
+	top:435px;
+	height:47px;
+	left:46%;
+	width:86px;
+}
+
+#tube {
+	z-index:10;
+	background:url(../images/tube_front.png) repeat-y top left;
+	position:absolute;
+	top:487px;
+	height:3300px;
+	left:46%;
+	width:86px;
+}
+
+#tube_back {
+	z-index:6;
+	background:url(../images/tube_back.gif) repeat-y top left;
+	position:absolute;
+	top:487px;
+	left:46%;
+	height:3300px;
+	width:86px;
+}
+
+#coral {
+	z-index:11;
+	background:url(../images/corel.png) no-repeat center;
+	position:absolute;
+	top:3600px;
+	height:460px;
+	width:100%;
+}
+
+#daksh {
+	position:absolute;
+	top:900px;
+	z-index:20;
+}
+
+.daksh_head {
+	font-size:90px;
+	color: #FAFAFA;
+}
+
+.daksh_content {
+	font-size:17px;
+}
+
+#sastra {
+	position:absolute;
+	top:2000px;
+	z-index:20;
+}
+
+.sastra_head {
+	font-size:90px;
+	color: #FAFAFA;
+}
+
+.sastra_content {
+	font-size:18px;
+}
+
+
+#daksh_resort {
+	background: url(../images/daksh_resort.png) no-repeat center;
+	position:absolute;
+	top:2900px;
+	z-index:20;
+	height:679px;
+	width:100%;
+}
+
+p {
+	color: #FAFAFA;
+}

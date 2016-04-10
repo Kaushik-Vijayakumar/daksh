@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700);
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.contact-container > section {
+	font-family: Raleway;
+	margin: 6% auto;
+	padding: 10em 3em;
+	text-align: center;
+}
+
+.contact-container a {
+	z-index: initial;
+    font-weight: initial;
+    background: initial;
+    color: initial;
+    text-align: initial;
+    text-shadow: initial;
+    text-decoration: initial;
+    font-family: initial;
+    position: initial;
+    bottom: initial;
+    width: initial;
+    cursor: initial;
+    font-size: initial;
+    height: initial;
+    line-height: initial;
+}
+
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}

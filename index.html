@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Daksh Deca</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/TimeCircles.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <script type="text/javascript" charset="utf-8" src="Lights_edgePreload.js"></script>
+        <style>
+            .edgeLoad-EDGE-510190616 { visibility:hidden; }
+        </style>
+    </head>
+    <body>
+    	<div id="CountDownTimer" data-timer="" style="width: 500px; height: 250px; float:right;"></div>
+        <div id="Stage" class="EDGE-510190616"></div>
+        <div id="logo"><img src="./images/Daksh Logo.png"></div>
+        <div id="bwave"></div>
+    	<div id="fwave"></div>
+        <div id="water"></div>
+        <div id="fade_middle"></div>
+        <div id="water_middle"></div>
+        <div id="fade_dark"></div>
+        <div id="water_dark"></div>
+        <div id="tube_top"></div>
+        <div id="tube_front_water"></div>
+        <div id="tube_top_back"></div>
+        <div id="tube"></div>
+        <div id="tube_back"></div>
+        <div id="miner"></div>
+        <div id="arrow"></div>
+        <div id="coral"></div>
+        <div id="daksh" class="container">
+        	<div class="col-lg-6 daksh_content" align="justify">
+                <p>
+                SASTRA, Shanmuga Arts Science Technology And Research Academy, located in Thanjavur, the capital of Chola kings, was founded in 1984 with all foresight and far reaching vision, has been in the forefront of innovation in technical education to provide world class and leading edge research facilities to over 10,000 students of Engineering, Management and Law to help them to tassel out into socially responsible citizens with indisputable probity and impeccable character. Providing more than 35 under-graduate and post-graduate courses, the University has won numerous accolades at both national and international forums for the same.
+                </p>
+                <p>
+SASTRA is no run-of-the-mill academic institution but a blend of research, academics, social responsibility, student clubs and a whole lot of fun! "Think merit, Think Transparency, Think SASTRA" is an epigram which signifies the merit based admission scheme which plays a vital role in the university’s ascend to the pinnacle of quality education.
+                </p>
+                <p>
+Moreover, the university is keen in providing its students with global exposure.It has roped in many universities around the globe to its 'Semester Abroad Programme' wherein the students are given an opportunity to pursue their final semester in a foreign university of their choice. Also, NAAC (National Assessment And Accredition Committee) has awarded SASTRA an 'A' grade with a score of 3.54 putting it right at the top of all technical universities in Tamil Nadu and giving it a national recognition.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <span class="page-header sastra_head">About SASTRA</span>
+            </div>
+        </div>
+            
+        <div id="sastra" class="container_fluid">
+        	<div class="col-lg-6">
+                <span class="page-header daksh_head">About DAKSH</span>
+            </div>
+            <div class="col-lg-6 sastra_content" align="justify">
+                <p>
+                Germinated as a sprout in 2007, Daksh, the international techno management fest of SASTRA University has been watered and nurtured by the students to grow into a tree reaching out with its branches all over the country. With strong roots of science and technology, Daksh has continued to bear fruits of innovation and cutting edge technology to be relished by the students. Daksh provides a grand stage for students to illustrate their skills and contend with their fellow mates to create a win-win scenario.
+                </p>
+                <p>
+The tenth edition of Daksh, 'Daksh DECA' now stands statuesque to focus on emerging advancements in technology and foster the same to address the problems of everyday. It extends itself to domains of Engineering, Management and Law. Ever since its provenance, Daksh sets the stage for the aspiring young minds that tests the mettle of their grey cells.
+                </p>
+                <p>
+The preceding version of Daksh was a breakthrough that accomplished bustling participation of over 20,000 students. This year, with the theme 'SANSKRIT', the mother of all languages and which speaks the greatness of our country, Daksh is all set to take you on a journey at the end of which participants treasure the most valued innovations and brainstorms experienced throughout. In a nutshell, Daksh is a prodigious event that takes technology to another dimension to witness the marvels of science as you have never imagined. We give you the best experience to unleash your dexterity and go galloping on your horses of victory. 
+                </p>
+			</div>
+        </div>
+            
+	    <script src="js/jquery.min.js" type="text/javascript"></script> 
+    	<script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/TimeCircles.js" type="text/javascript"></script>
+        <script>
+            var scrolled = 0;
+            var canScroll;
+			function collision($div1, $div2) {
+			  var x1 = $div1.offset().left;
+			  var y1 = $div1.offset().top;
+			  var h1 = $div1.outerHeight(true);
+			  var w1 = $div1.outerWidth(true);
+			  var b1 = y1 + h1;
+			  var r1 = x1 + w1;
+			  var x2 = $div2.offset().left;
+			  var y2 = $div2.offset().top;
+			  var h2 = $div2.outerHeight(true);
+			  var w2 = $div2.outerWidth(true);
+			  var b2 = y2 + h2;
+			  var r2 = x2 + w2;
+		
+			  if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
+			  return true;
+			}
+		
+			$(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                    window.location.replace("citadel.html");
+		   		}
+			});
+			
+			$("#CountDownTimer")
+			.attr("data-timer", (new Date("February 19, 2016 00:09:00").getTime()-new Date().getTime())/1000)
+			.TimeCircles();
+			
+            $("#arrow").click(function() {
+                scroll();
+            });
+
+            function scroll() {
+                $('html, body').animate({scrollTop: scrolled}, 500);
+                scrolled += 500;
+            }
+
+            $("#arrow").mouseenter(function() {
+               canScroll = setInterval(scroll, 200);
+            }).mouseleave(function () { 
+               clearInterval(canScroll);
+            });
+
+		</script>
+   		<script src="js/style.js" type="text/javascript"></script>
+
+    </body>
+</html>
